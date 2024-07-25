@@ -188,7 +188,9 @@ Klicke dazu auf die drei Striche (![Menü-Button in GitHub Codespaces](docs/scre
 Dort tippe folgendes ein:
 
 ```shell
+
 scrapy runspider sommercamp/crawler.py --output data/documents.jsonl
+
 ```
 
 Die Zeile startet den Crawler und fängt an, die gecrawlten Dokumente (Webseiten-Inhalte) in die Datei [`documents.jsonl`](data/documents.jsonl) im Verzeichnis `data/` zu schreiben. Schau gerne mal rein, indem du [hier](data/documents.jsonl) klickst. Was komisch aussieht, ist ein strukturiertes Datenformat, bei dem in jeder Zeile ein Dokument steht.
@@ -392,9 +394,7 @@ Achte dabei darauf, dass du deinen Suchbegriff zwischen Anführungszeichen (`"`)
 
 Im Terminal siehst du jetzt die ersten zehn Suchergebnisse, die der Such-Algorithmus (BM25) zu deiner Suchanfrage gefunden hat.
 (Wenn dir etwas wie `Empty DataFrame` zurückgegeben wird, dann bedeutet das, dass keine Ergebnisse gefunden werden konnten. Probiere einfach einen anderen Suchbegriff.)
-Noch ist außerdem der Titel und der Text abgeschnitten und auch sonst ist die kleine Suchmaschine noch nicht besonders benutzerfreundlich. Das wollen wir im nächsten Schritt verbessern.
-
-## Eine Benutzeroberfläche für die Suchmaschine erstellen
+Noch ist außerdem der Titel und der Text abgeschnitten und auch sonst ist die kleine Suchmaschine noch nicht besonders benutzerfreundlich. Das wollen wir im nächsten Schritt verbessern.## Eine Benutzeroberfläche für die Suchmaschine erstellen
 
 Um deine Suchmaschine komplett zu machen, fehlt noch eine schöne Benutzeroberfläche.
 Du ahnst es vielleicht schon: Wir erfinden das Rad wieder nicht neu, sondern benutzen wieder eine Software-Bibliothek, [Streamlit](https://docs.streamlit.io/).

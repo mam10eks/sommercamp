@@ -15,4 +15,11 @@ gatherUsageStats = false
 [ui]
 hideTopBar = true
 
+[theme]
+primaryColor="#CDD1D3"
+backgroundColor="#69A196"
+secondaryBackgroundColor="#01857A"
+textColor="#FFFFFF"
+font="sans serif"
+
 # Eigene Einstellungen kannst du unterhalb dieser Zeile einfügen.
