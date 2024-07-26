@@ -1,0 +1,40 @@
+from streamlit import (text_input, header, title, subheader, container, markdown, sidebar, link_button, divider, set_page_config)
+
+title("Wir sind Autisten")
+sidebar.page_link("app.py", label="Was ist Autismus?") 
+sidebar.page_link("pages/app3.py", label="frühkindlicher Autismus und atypischer Autismus")
+sidebar.page_link("pages/user.py", label="Asperger-Syndrom")
+sidebar.page_link("pages/app4.py", label="Autismus und Schule")
+sidebar.page_link("pages/app5.py", label="Autismus und Beruf")
+sidebar.page_link("pages/app6.py", label="Diagnose und Therapie")
+sidebar.page_link("pages/app7.py", label="Eltern von autistischen Kindern")
+sidebar.page_link("pages/app8.py", label="Wie kann ich helfen?")
+sidebar.page_link("pages/app9.py", label="Mehr über Autismus")
+   
+markdown(":star2: Vielfalt in der Welt:star2:")
+markdown(":smile: Every autistic is unique :smile:")
+
+divider()
+header("Mehr über Autismus")
+import streamlit as st
+st.image("https://www.flex-fernschule.de/wordpress/wp-content/uploads/2017/07/autismus.jpg", caption="Wir sind bunt", use_column_width=True)
+
+subheader("Autismus in der höheren Bildung")
+markdown("Autistische Menschen haben oft Schwierigkeiten, sich in der höheren Bildung zurechtzufinden. Sie können Schwierigkeiten haben, sich zu organisieren, mit anderen zu kommunizieren und sich in der Welt zurechtzufinden. Oftmals sind sie mit Vorurteilen und Unverständnis konfrontiert. Es ist wichtig, dass autistische Menschen sich über Autismus informieren und sich mit anderen austauschen. Es gibt zahlreiche Selbsthilfegruppen und Beratungsstellen, die autistische Menschen unterstützen.")
+markdown("Wenn Sie mehr über Autismus in der höheren Bildung erfahren möchten, können Sie auf den folgenden Link klicken:")
+link_button("Zum Herunterladen", "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.autismus.de/fileadmin/RECHT_UND_GESELLSCHAFT/Broschuere_Studium_Online_Rohfassung16_10_2015.pdf&ved=2ahUKEwiL2Nny6sSHAxUTRP4FHZAqBJYQFnoECBYQAQ&usg=AOvVaw1RITtll6DLNIIq6DVc6yNM")
+divider()
+subheader("Frauen im Spektrum")
+markdown("Autismus wird oft mit Männern in Verbindung gebracht, aber auch Frauen können autistisch sein. Oftmals wird Autismus bei Frauen nicht erkannt, da sie sich besser anpassen können und ihre Symptome besser verbergen können.")
+link_button("Mehr Informationen", "https://www.praxis-für-psychotherapie.com/autismus-bei-frauen/")
+divider()
+subheader("Sind alle Autisten talentiert?")
+import streamlit as st
+st.image("https://www.tz.de/assets/images/33/234/33234115-young-sheldon-geht-zu-ende-1f70.jpg", caption="Young Sheldon", use_column_width=True)
+markdown("Autistische Menschen haben oft besondere Talente und Fähigkeiten, aber nicht alle Autisten sind talentiert. Es gibt autistische Menschen, die besondere Talente haben, aber es gibt auch autistische Menschen, die keine besonderen Talente haben.")
+divider()
+subheader("Neurodiversität")
+import streamlit as st
+st.image("https://s3.amazonaws.com/production.scholastica/public/attachments/ee53ff13-ea2b-42d4-8043-294dc75a8a2d/large/image1.png", caption="Neurodiversität", use_column_width=True)
+markdown("Neurodiversität setzt sich aus dem griechischen Wort „Neuro“ für Nerv oder auch Nervensystem zusammen. Des Weiteren setzt es sich aus dem lateinisch stammenden Wort „Diversität“, das Vielfalt bedeutet, zusammen. Es bedeutet somit neurologische Vielfalt: Eine neurologische Vielfalt mit unterschiedlichen Wahrnehmungen, die selbstverständlich zu unserer Gesellschaft gehört. ")
+link_button("Mehr über Neurodiversität", "https://www.enableme.de/de/behinderungen/neurodiversitat-vielfalt-leben-9757")

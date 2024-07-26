@@ -6,6 +6,7 @@ folderWatchBlacklist = [".scrapy"]
 
 [client]
 toolbarMode = "minimal"
+showSidebarNavigation = false
 
 [browser]
 serverAddress = "localhost"
